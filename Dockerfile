@@ -2,8 +2,8 @@ FROM centos:7
 MAINTAINER levkov
 
 RUN rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/UTC /etc/localtime
-RUN yum update -y
-RUN yum install -y wget
+RUN yum update -y && \
+    yum install -y wget
 RUN wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN rpm -ivh epel-release-latest-7.noarch.rpm
 RUN yum install -y openssh-server openssh-clients python-pip
