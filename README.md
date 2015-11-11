@@ -1,3 +1,3 @@
 # shc-base
  
-Basic Centos 7 image with SSH and Supervisor.
+Basic Centos 7 image with SSH and Supervisor
