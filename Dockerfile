@@ -8,7 +8,6 @@ RUN wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN rpm -ivh epel-release-latest-7.noarch.rpm
 RUN yum install -y openssh-server openssh-clients python-pip python
 RUN pip install --upgrade pip
-RUN pip install pyopenssl
 RUN pip install requests supervisor 
 
 RUN rm -f /etc/ssh/ssh_host_ecdsa_key /etc/ssh/ssh_host_rsa_key && \
