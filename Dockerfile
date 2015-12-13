@@ -1,4 +1,4 @@
-FROM centos:7.1
+FROM centos:7
 MAINTAINER levkov
 
 RUN rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/UTC /etc/localtime
