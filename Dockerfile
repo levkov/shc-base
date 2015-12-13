@@ -6,7 +6,7 @@ RUN yum update -y && \
     yum install -y wget
 RUN wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN rpm -ivh epel-release-latest-7.noarch.rpm
-RUN yum install -y openssh-server openssh-clients python-pip
+RUN yum install -y openssh-server openssh-clients python-pip python2.7
 RUN pip install --upgrade pip
 RUN pip install 'requests[security]' supervisor
 
